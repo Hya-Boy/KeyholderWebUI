@@ -1,38 +1,6 @@
 {
-  "myName": "Locked Sub",
-  "keyholderName": "Keyholder",
-  "mySocials": [
-    {
-      "platform": "BLUESKY",
-      "label": "Bluesky",
-      "value": "Sub"
-    },
-    {
-      "platform": "X",
-      "label": "X",
-      "value": "LockedSub"
-    },
-    {
-      "platform": "RECON",
-      "label": "Recon",
-      "value": "SubWhoIsLocked"
-    }
-  ],
-  "keyholderSocials": [
-    {
-      "platform": "X",
-      "label": "X",
-      "value": "KeyHolder"
-    },
-    {
-      "platform": "BLUESKY",
-      "label": "Bluesky",
-      "value": "keyholder.example.test"
-    },
-    {
-      "platform": "RECON",
-      "label": "Recon",
-      "value": "TheKeyHolder"
-    }
-  ]
+  "myName": "",
+  "keyholderName": "",
+  "mySocials": [],
+  "keyholderSocials": []
 }
