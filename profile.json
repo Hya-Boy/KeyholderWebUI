@@ -1,9 +1,9 @@
 {
-  "myName": null,
-  "keyholderName": null,
+  "myName": "",
+  "keyholderName": "",
   "myRoleLabel": "Cagewearer",
   "keyholderRoleLabel": "Key Holder",
   "mySocials": [],
   "keyholderSocials": [],
-  "webTheme": "red"
+  "webTheme": "green"
 }
