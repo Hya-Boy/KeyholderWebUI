@@ -1,13 +1,53 @@
+/* Surfaces and text are neutral (no hue tint) across every theme on purpose — color identity
+   lives entirely in the accent, not in a colorized "mauve"-style near-black. Pure black
+   background, plain gray panels/borders/secondary text, and a genuinely vibrant per-theme
+   accent (not a desaturated/muted tone). */
 :root {
   --void-black: #000000;
-  --panel: #160607;
-  --panel-elevated: #200A0C;
-  --steel-line: #3D161B;
-  --accent-red: #E4002B;
-  --deep-crimson: #6E0016;
-  --bright-red: #FF3B57;
-  --text-primary: #F5EEEE;
-  --text-secondary: #B08D91;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #FF000D;
+  --deep-crimson: #C40012;
+  --bright-red: #FF4159;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
+}
+
+:root[data-theme="blue"] {
+  --void-black: #000000;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #0080FF;
+  --deep-crimson: #0047CC;
+  --bright-red: #4DB8FF;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
+}
+
+:root[data-theme="green"] {
+  --void-black: #000000;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #00E676;
+  --deep-crimson: #00A344;
+  --bright-red: #66FFA6;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
+}
+
+:root[data-theme="orange"] {
+  --void-black: #000000;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #FF6D00;
+  --deep-crimson: #CC5800;
+  --bright-red: #FFA24D;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
 }
 
 * { box-sizing: border-box; }
@@ -106,6 +146,16 @@ a:hover { color: var(--bright-red); }
 .status-date {
   font-size: 13px;
   color: var(--text-secondary);
+}
+
+.status-date-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-top: 10px;
 }
 
 .empty-note {

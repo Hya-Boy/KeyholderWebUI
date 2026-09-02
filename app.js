@@ -60,8 +60,9 @@ function renderStatus(status) {
     el.innerHTML = `
       <div class="status-ring">
         <div>
-          <div class="status-label">Locked since</div>
+          <div class="status-label">Locked for</div>
           <div class="status-clock" id="live-clock">--:--:--</div>
+          <div class="status-date-label">Start date</div>
           <div class="status-date">${formatDateTime(status.since)}</div>
         </div>
       </div>
@@ -183,22 +184,31 @@ function renderProfileBlock(name, socials) {
   return nameHtml + linksHtml;
 }
 
+function applyWebTheme(profile) {
+  const theme = profile && profile.webTheme ? profile.webTheme : "red";
+  document.documentElement.dataset.theme = theme;
+}
+
 function renderProfile(profile) {
   const el = document.getElementById("profile-section");
+  applyWebTheme(profile);
   if (!profile) {
     el.innerHTML = "";
     return;
   }
+
+  const myRoleLabel = escapeHtml(profile.myRoleLabel || "Cagewearer");
+  const keyholderRoleLabel = escapeHtml(profile.keyholderRoleLabel || "Key Holder");
 
   const lockedByHtml = renderProfileBlock(profile.myName, profile.mySocials);
   const keyholderHtml = renderProfileBlock(profile.keyholderName, profile.keyholderSocials);
 
   let html = "";
   if (lockedByHtml) {
-    html += `<div class="profile-block"><div class="profile-label">Locked by</div>${lockedByHtml}</div>`;
+    html += `<div class="profile-block"><div class="profile-label">${myRoleLabel}</div>${lockedByHtml}</div>`;
   }
   if (keyholderHtml) {
-    html += `<div class="profile-block"><div class="profile-label">Keyholder</div>${keyholderHtml}</div>`;
+    html += `<div class="profile-block"><div class="profile-label">${keyholderRoleLabel}</div>${keyholderHtml}</div>`;
   }
   el.innerHTML = html;
 }
