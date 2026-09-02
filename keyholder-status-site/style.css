@@ -1,49 +1,53 @@
+/* Surfaces and text are neutral (no hue tint) across every theme on purpose — color identity
+   lives entirely in the accent, not in a colorized "mauve"-style near-black. Pure black
+   background, plain gray panels/borders/secondary text, and a genuinely vibrant per-theme
+   accent (not a desaturated/muted tone). */
 :root {
   --void-black: #000000;
-  --panel: #160607;
-  --panel-elevated: #200A0C;
-  --steel-line: #3D161B;
-  --accent-red: #E4002B;
-  --deep-crimson: #6E0016;
-  --bright-red: #FF3B57;
-  --text-primary: #F5EEEE;
-  --text-secondary: #B08D91;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #FF000D;
+  --deep-crimson: #C40012;
+  --bright-red: #FF4159;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
 }
 
 :root[data-theme="blue"] {
   --void-black: #000000;
-  --panel: #06111A;
-  --panel-elevated: #0A1A24;
-  --steel-line: #163040;
-  --accent-red: #0080E4;
-  --deep-crimson: #004C8C;
-  --bright-red: #3BB4FF;
-  --text-primary: #EEF3F5;
-  --text-secondary: #8DA6B0;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #0080FF;
+  --deep-crimson: #0047CC;
+  --bright-red: #4DB8FF;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
 }
 
 :root[data-theme="green"] {
   --void-black: #000000;
-  --panel: #071409;
-  --panel-elevated: #0C1F0E;
-  --steel-line: #1E3D22;
-  --accent-red: #12A83D;
-  --deep-crimson: #0E6E28;
-  --bright-red: #3BFF7A;
-  --text-primary: #EEF5EF;
-  --text-secondary: #8FB098;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #00E676;
+  --deep-crimson: #00A344;
+  --bright-red: #66FFA6;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
 }
 
 :root[data-theme="orange"] {
   --void-black: #000000;
-  --panel: #190D06;
-  --panel-elevated: #24140A;
-  --steel-line: #402A16;
-  --accent-red: #E47800;
-  --deep-crimson: #8C4A00;
-  --bright-red: #FF9E3B;
-  --text-primary: #F5EFEA;
-  --text-secondary: #B0968D;
+  --panel: #121212;
+  --panel-elevated: #1C1C1C;
+  --steel-line: #333333;
+  --accent-red: #FF6D00;
+  --deep-crimson: #CC5800;
+  --bright-red: #FFA24D;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
 }
 
 * { box-sizing: border-box; }
