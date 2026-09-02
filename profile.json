@@ -1,6 +1,9 @@
 {
   "myName": "",
   "keyholderName": "",
+  "myRoleLabel": "Cagewearer",
+  "keyholderRoleLabel": "Key Holder",
   "mySocials": [],
-  "keyholderSocials": []
+  "keyholderSocials": [],
+  "webTheme": "blue"
 }
